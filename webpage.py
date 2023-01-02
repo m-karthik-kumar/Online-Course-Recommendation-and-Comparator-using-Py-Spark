@@ -3,6 +3,10 @@
 import streamlit as st 
 import streamlit.components.v1 as stc 
 import pyspark
+from pyspark.sql import SparkSession
+
+#Create SparkSession
+spark = SparkSession.builder.master("local[1]").appName("SparkByExamples.com").getOrCreate()
 
 
 # Load EDA
@@ -79,7 +83,10 @@ def main():
 	choice = st.sidebar.selectbox("Menu",menu)
 
 	df = load_data("udemy_course_data.csv")
-	DF = spark.read.csv(path="udemy_tech.csv",header=True, inferSchema=True )
+	DF = spark.read.csv('udemy_tech.csv',header=True, inferSchema=True, )
+	DF=DF.withColumn("Enrollment",DF.Enrollment.cast('int'))
+	DF=DF.withColumn("Stars",DF.Stars.cast('float'))
+	DF=DF.withColumn("Rating",DF.Rating.cast('int'))
 	
 	
 
