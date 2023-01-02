@@ -75,7 +75,7 @@ def main():
 	menu = ["Home","Recommend","About"]
 	choice = st.sidebar.selectbox("Menu",menu)
 
-	df = load_data("data/udemy_course_data.csv")
+	df = load_data("udemy_course_data.csv")
 
 	if choice == "Home":
 		st.subheader("Home")
