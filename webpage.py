@@ -79,7 +79,7 @@ def main():
 	choice = st.sidebar.selectbox("Menu",menu)
 
 	df = load_data("udemy_course_data.csv")
-	DF = spark.read.csv(path="udemy_tech.csv",header=True, inferSchema=True, )
+	DF = spark.read.csv(path="udemy_tech.csv",header=True, inferSchema=True )
 	
 	
 
