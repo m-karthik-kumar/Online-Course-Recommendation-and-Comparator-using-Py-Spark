@@ -92,7 +92,7 @@ def main():
 
 	if choice == "Home":
 		st.subheader("Home")
-		st.dataframe(DF.show(10))
+		st.dataframe(df.head(10))
 
 
 	elif choice == "Recommend":
