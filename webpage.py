@@ -6,9 +6,9 @@ import pyspark
 from pyspark.sql import SparkSession
 
 # Create SparkSession
-# spark = SparkSession.builder.master("local[1]").appName("SparkByExamples.com").getOrCreate()
-conf = SparkConf().setAppName("lecture-lyon2").setMaster("local")
-spark = SparkSession.builder.config(conf=conf).getOrCreate()
+spark = SparkSession.builder.master("local[1]").appName("SparkByExamples.com").getOrCreate()
+# conf = SparkConf().setAppName("lecture-lyon2").setMaster("local")
+# spark = SparkSession.builder.config(conf=conf).getOrCreate()
 
 # Load EDA
 import pandas as pd 
