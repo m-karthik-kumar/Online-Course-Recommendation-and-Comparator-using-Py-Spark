@@ -83,10 +83,10 @@ def main():
 	choice = st.sidebar.selectbox("Menu",menu)
 
 	df = load_data("udemy_course_data.csv")
-	DF = spark.read.csv('udemy_tech.csv',header=True, inferSchema=True, )
-	DF=DF.withColumn("Enrollment",DF.Enrollment.cast('int'))
-	DF=DF.withColumn("Stars",DF.Stars.cast('float'))
-	DF=DF.withColumn("Rating",DF.Rating.cast('int'))
+# 	DF = spark.read.csv('udemy_tech.csv',header=True, inferSchema=True, )
+# 	DF=DF.withColumn("Enrollment",DF.Enrollment.cast('int'))
+# 	DF=DF.withColumn("Stars",DF.Stars.cast('float'))
+# 	DF=DF.withColumn("Rating",DF.Rating.cast('int'))
 	
 	
 
