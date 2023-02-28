@@ -1,5 +1,5 @@
 # Course-Recommendation
-     Demand and need for virtual education are increasing day by day due to the convenience it provides. Many companies
+  Demand and need for virtual education are increasing day by day due to the convenience it provides. Many companies
 encase this demand. Thus, multiple platforms provide similar courses. It is difficult for a user to choose the appropriate
 course from a huge number of courses available on multiple platforms. Personalized course recommendation technology is one
 of the hotspots in the online education field. Recommendation technologies that would compare different learning platforms
